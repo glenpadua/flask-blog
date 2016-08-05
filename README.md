@@ -1,1 +1,3 @@
-Simple Flask App to get up and running!
+# flask-blog
+Simple Flask app to get up and running
+
