@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {% if title %}
     <title>{{ title }} - Blog</title>
+    {% else %}
+    <title>Welcome to Flask blog</title>
+    {% endif %}
 </head>
 <body>
     <h1>Hello {{ user.name }} !</h1>
+    {% for post in posts %}
+    <div>
+        <p>{{ post.author.name }} says: <b>{{ post.body }}</b></p>
+    </div>
+    {% endfor %}
 </body>
 </html>
